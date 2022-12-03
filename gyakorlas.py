@@ -45,8 +45,7 @@ def hozzaad_veletlent(lista):
 def paratlan_oszthato(lista):
     szam = 0
     while szam > 100 or szam < 10 or szam % 3 != 0 or szam % 2 == 0:
-        # szam = int(input("Adjon meg egy hárommal osztható, kétjegyű, páratlan számot! "))
-        szam = 99
+        szam = int(input("Adjon meg egy hárommal osztható, kétjegyű, páratlan számot! "))
     lista.append(szam)
 
 # 3/3. Használd a 2. feladat kiíró metódusát paraméter nélkül, ekkor szóközzel írja ki a tömb elemeit, egymás mellé!
