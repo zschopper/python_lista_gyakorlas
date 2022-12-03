@@ -84,13 +84,14 @@ def prim_e(num):
 
     # háromtól kezdünk, a szám gyökéig.
     # amint osztót találunk, visszatérünk hamissal.
-    # mivel páros csak páros számok jöhetnek szóba, kettesével lépkedünk
+    # mivel páratlan számok jöhetnek szóba, kettesével lépkedünk
     i = 3
     while i <= int(vizsgalat_vege):
         if num % i == 0:
             return False
         i += 2
 
+    # ha nem találtunk osztót, akkor prímszámot kaptunk!
     return True
 
 def primeket_szamol(lista):
